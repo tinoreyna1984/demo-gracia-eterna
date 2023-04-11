@@ -1,29 +1,46 @@
 import Link from "next/link";
 
 export default function Header() {
-    const handleClickMobile = () => {
-        if (!window.matchMedia("(max-width: 767px)").matches)
-            return;
-        const ul = document.querySelector("ul");
-        ul.style.left = (ul.style.left === "-100%") ? 0 : "-100%"; // aquí hace el desplazamiento
+
+    const ul = (typeof window !== "undefined") && document.querySelector("ul");
+    const check = (typeof window !== "undefined") && document.querySelector("#check");
+    const icon = (typeof window !== "undefined") && document.querySelector("#icon");
+
+    const showSidebar = () => {
+        if (check.checked === false && ul.style.left === "-100%") {
+            icon.innerHTML = "close";
+            ul.style.left = 0;
+            check.checked = true;
+        }
+        else {
+            icon.innerHTML = "menu";
+            ul.style.left = "";
+            check.checked = false;
+        }
+        //console.log(check.checked, ul.style.left, icon.innerHTML)
+    };
+
+    const toggleMenu = () => {
+        icon.innerHTML = (check.checked === true) ? "close" : "menu";
+        //console.log(check.checked, ul.style.left, icon.innerHTML)
     }
 
     return (
         <header>
             <nav>
-                <input type="checkbox" id="check" onClick={handleClickMobile} />
+                <input onChange={toggleMenu} type="checkbox" id="check" />
                 <label htmlFor="check" className="checkbtn">
-                    <span className="material-symbols-outlined">menu</span>
+                    <span id="icon" className="material-symbols-outlined">menu</span>
                 </label>
-                <Link onClick={handleClickMobile} href={"/"} className="enlace">
+                <Link href={"/"} className="enlace">
                     <img src="ge-logo.jpg" alt="logo" className="logo" />
                 </Link>
                 <ul>
-                    <li><Link onClick={handleClickMobile} href="/">Inicio</Link></li>
-                    <li><Link onClick={handleClickMobile} href="#">Nuestra iglesia</Link></li>
-                    <li><Link onClick={handleClickMobile} href="#">Ministerios</Link></li>
-                    <li><Link onClick={handleClickMobile} href="#">Mensaje del pastor</Link></li>
-                    <li><Link onClick={handleClickMobile} href="#">Contacto</Link></li>
+                    <li><Link onClick={showSidebar} href="/">Inicio</Link></li>
+                    <li><Link onClick={showSidebar} href="#">Nuestra iglesia</Link></li>
+                    <li><Link onClick={showSidebar} href="#">Ministerios</Link></li>
+                    <li><Link onClick={showSidebar} href="#">Mensaje del pastor</Link></li>
+                    <li><Link onClick={showSidebar} href="#">Contacto</Link></li>
                 </ul>
             </nav>
         </header>

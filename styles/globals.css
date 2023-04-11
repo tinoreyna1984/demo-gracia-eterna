@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 @import "header.css";
+@import "hero.css";
+@import "footer.css";
+@import "scroll-to-top.css";
 
 * {
   font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bbbaba;
 }

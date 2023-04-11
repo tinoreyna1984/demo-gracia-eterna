@@ -1,14 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
-import Header from '@/layout/header'
-
-const inter = Inter({ subsets: ['latin'] })
+import Hero from '@/layout/hero'
+import Resume from '@/layout/resume'
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Hero />
+      <Resume />
     </>
   )
 }
