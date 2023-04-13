@@ -83,6 +83,7 @@ nav ul li a:active ~ ul, nav ul li a:focus-within ~ ul {
     display: block;
   }
   nav ul {
+    position: relative;
     width: 100%;
     height: 100vh;
     background: #f5f2f0;
@@ -94,33 +95,27 @@ nav ul li a:active ~ ul, nav ul li a:focus-within ~ ul {
     margin-top: 25px;
     margin-right: unset; /* cuando hay position: relative en la definición anterior */
   }
-  /* submenú */
   nav ul.sub-menu{
-    position: static;
-    height: fit-content;
-    top: 0;
-    left: 0;
-    background-color: #f5f2f0;
     margin-top: unset;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0;
   }
   nav ul li {
     display: block;
-    padding: 15px 0;
+    padding: 20px 0;
     line-height: 30px;
   }
   nav ul li a {
     color: #000;
     font-size: 20px;
   }
-  nav ul li ul li a {
-    color: #000;
-    font-size: 15px;
+
+  /* submenú */
+  .sub-menu {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    background-color: #f5f2f0;
   }
+
   
   li a:hover,
   li a.active {
@@ -134,4 +129,7 @@ nav ul li a:active ~ ul, nav ul li a:focus-within ~ ul {
   #check:checked ~ .menu {
     left: 0;
   }
+  /* li a.active ~ ul {
+    left: 0 !important;
+  } */
 }

@@ -19,10 +19,29 @@ export default function Header() {
             mainmenu.style.left = "";
             check.checked = false;
         }
+        //console.log(check.checked, mainmenu.style.left, icon.innerHTML)
     };
 
     const toggleMenu = () => {
         icon.innerHTML = (check.checked === true) ? "close" : "menu";
+        //console.log(check.checked, mainmenu.style.left, icon.innerHTML)
+    }
+
+    const toggleSubMenu = () => {
+        if(!window.matchMedia("(max-width: 767px)").matches) return;
+        subMenu.style.left = (subMenu.style.left === "-100%" || subMenu.style.left === "") ? "0" : "-100%";
+    }
+
+    const clickSubMenuItem = () => {
+        if(!window.matchMedia("(max-width: 767px)").matches) return;
+        subMenu.style.removeProperty("left");
+        hideSidebar();
+    }
+
+    const subMenuFocusLost = () => {
+        if(!window.matchMedia("(max-width: 767px)").matches) return;
+        const checkFocus = document.activeElement === subMenu;
+        if(!checkFocus) subMenu.style.removeProperty("left");
     }
 
     return (
@@ -38,14 +57,13 @@ export default function Header() {
                 <ul className="menu">
                     <li><Link onClick={hideSidebar} href="/">Inicio</Link></li>
                     <li>
-                        <Link href="#">
-                            Nuestra iglesia
-                        </Link>
-                        <ul className="sub-menu">
-                            <li><Link onClick={hideSidebar} href="/historia/nuestra-historia">Nuestra historia</Link></li>
-                            <li><Link onClick={hideSidebar} href="/historia/reforma">La Reforma Protestante</Link></li>
-                            <li><Link onClick={hideSidebar} href="/historia/iglesia">Iglesia Presbiteriana</Link></li>
-                            <li><Link onClick={hideSidebar} href="/historia/nuestra-fe">Nuestra fe</Link></li>
+                        <Link onClick={toggleSubMenu} href="#">Nuestra iglesia (+)</Link>
+                        <ul onClick={subMenuFocusLost} className="sub-menu">
+                            <li><Link onClick={clickSubMenuItem} href="/historia/nuestra-historia">Nuestra historia</Link></li>
+                            <li><Link onClick={clickSubMenuItem} href="/historia/reforma">La Reforma Protestante</Link></li>
+                            <li><Link onClick={clickSubMenuItem} href="/historia/iglesia">Iglesia Presbiteriana</Link></li>
+                            <li><Link onClick={clickSubMenuItem} href="/historia/nuestra-fe">Nuestra fe</Link></li>
+                            <li className="md:hidden"><span className="material-symbols-outlined cursor-pointer">close</span></li>
                         </ul>
                     </li>
                     <li><Link onClick={hideSidebar} href="#">Ministerios</Link></li>
