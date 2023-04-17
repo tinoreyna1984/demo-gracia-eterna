@@ -6,7 +6,6 @@ export default function Header() {
     const mainmenu = (typeof window !== "undefined") && document.querySelector(".menu");
     const check = (typeof window !== "undefined") && document.querySelector("#check");
     const icon = (typeof window !== "undefined") && document.querySelector("#icon");
-    const subMenu = (typeof window !== "undefined") && document.querySelector(".sub-menu");
 
     const hideSidebar = () => {
         if (check.checked === false && mainmenu.style.left === "-100%") {

@@ -48,10 +48,12 @@ nav ul li ul {
   display: flex;
   flex-direction: column;
   z-index: inherit;
+  visibility: hidden;
   opacity: 0;
 }
 
 nav ul li a:active ~ ul, nav ul li a:focus-within ~ ul {
+  visibility: visible;
   opacity: 1;
 }
 
@@ -113,6 +115,7 @@ nav ul li a:active ~ ul, nav ul li a:focus-within ~ ul {
     padding: 15px 0;
     line-height: 30px;
   }
+  
   nav ul li a {
     color: #000;
     font-size: 20px;
@@ -127,6 +130,10 @@ nav ul li a:active ~ ul, nav ul li a:focus-within ~ ul {
     text-decoration: underline;
     background-color: unset;
     color: unset;
+  }
+  nav ul li ul { /* permanentemente visible en móviles */
+    visibility: visible;
+    opacity: 1;
   }
   .fixed-body {
     overflow: hidden;
