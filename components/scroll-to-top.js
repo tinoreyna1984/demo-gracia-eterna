@@ -1,10 +1,14 @@
 import { scrollToTop } from '../helpers/scroll-to-top-event';
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import { useState, useEffect } from "react";
 
 export default function ScrollToTop() {
 
   const [isVisible, setIsVisible] = useState(false);
+
+  const router = useRouter();
+  //console.log(router)
 
   useEffect(() => {
     // Button is displayed after scrolling for 500 pixels
@@ -24,7 +28,7 @@ export default function ScrollToTop() {
   return (
     <>
       {isVisible && (
-        <Link href="/" legacyBehavior scroll={false}>
+        <Link href={router.pathname} legacyBehavior scroll={false}>
           <a id="scroll-to-top" onClick={scrollToTop} className="bg-black rounded fixed p-[5px] bottom-[40px] right-[40px]
               text-white flex justify-center items-center cursor-pointer border-0 shadow-lg shadow-gray-300
               scroll-to-top-animation">

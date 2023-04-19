@@ -47,8 +47,7 @@ export default function Header() {
                             <li><Link onClick={hideSidebar} href="/historia/nuestra-fe">Nuestra fe</Link></li>
                         </ul>
                     </li>
-                    <li><Link onClick={hideSidebar} href="#">Ministerios</Link></li>
-                    <li><Link onClick={hideSidebar} href="#">Servicios</Link></li>
+                    <li><Link onClick={hideSidebar} href="/servicios">Servicios y Ministerios</Link></li>
                     <li><Link onClick={hideSidebar} href="#">Contacto</Link></li>
                 </ul>
             </nav>

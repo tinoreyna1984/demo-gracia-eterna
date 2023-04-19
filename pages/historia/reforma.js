@@ -29,13 +29,13 @@ export default function Reforma() {
                 <p className='md:text-[16px] lg:text-[24px] md:col-span-2'>
                     En este punto, se generó un nuevo cisma en la iglesia, cuyo precedente más cercano fue en el año 1054, el "gran cisma de la iglesia". Lutero comenzó a diseminar sus trabajos en Alemania y estados directamente asociados al Sacro Imperio Germánico. Subsecuentemente, los príncipes europeos que decidieron aceptar la teología luterana y deslindarse del papa emitieron una protesta en la llamada Dieta de Spira (1529) ante el entonces emperador Carlos V. De ahí a los términos "protestantismo" y "protestante", entre otras variaciones.
                 </p>
-                <p className='md:text-[16px] lg:text-[24px] md:row-span-2 md:self-center lg:self-start'>
+                <p className='md:text-[16px] lg:text-[24px] md:row-span-1 md:self-center lg:self-start'>
                     Este proceso involucró a otras personas prominentes del continente, entre ellas Juan Calvino (1509 - 1564), quien ha establecido el tratado teológico más grande del protestantismo: la "Institución de la Religión Cristiana". Es la base de la teología reformada y una obra emblemática cuyos preceptos puso en práctica en su ministerio en Ginebra, Suiza.
                 </p>
-                <img className='md:row-span-1 md:col-span-1 md:justify-self-center'
+                <img className='md:row-span-2 md:col-span-1 md:justify-self-center'
                     src='../historia/reforma/juan-calvino.jpg' alt='juan calvino' title="Juan Calvino"
                 />
-                <p className='md:text-[16px] lg:text-[24px] md:col-span-2'>
+                <p className='md:text-[16px] lg:text-[24px] md:col-span-1'>
                     En resumen, fue en aquel periodo en el que los llamados reformadores fueron llamados por Dios para buscar el reencuentro con Dios a través de la Biblia, que trajo consigo nuevas perspectivas de vida cristiana, misión, teología, etcétera, para la gloria de Dios.
                 </p>
                 <h3
@@ -45,7 +45,7 @@ export default function Reforma() {
                     La Reforma hoy
                 </h3>
                 <p className='md:text-[16px] lg:text-[24px] pb-10 md:col-span-2'>
-                    El legado de la reforma continúa al día de hoy, pues a través de los tiempos la iglesia se renueva cada día según la Palabra de Dios. "Ecclesia reformata semper reformanda est" ("La iglesia reformada siempre está reformándose").
+                    El legado de la Reforma continúa al día de hoy, pues a través de los tiempos la iglesia se renueva cada día según la Palabra de Dios. "Ecclesia reformata semper reformanda est" ("La iglesia reformada siempre está reformándose").
                 </p>
             </section>
         </>

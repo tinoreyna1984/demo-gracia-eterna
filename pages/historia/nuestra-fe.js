@@ -1,15 +1,12 @@
 export default function NuestraFe() {
     return (
         <>
-            <section className='flex flex-col gap-2 mt-24 px-6 py-8 lg:px-12 lg:py-0 lg:mt-36
+            <section className='flex flex-col gap-2 mt-24 px-6 py-8 lg:px-12 lg:py-0 lg:mt-36 lg:mb-10
                 scroll-mt-[130px] lg:scroll-mt-[200px]'
             >
                 <h2 className='text-[28px] md:text-[48px] lg:text-[52px] text-center md:text-start uppercase lg:text-left'>
                     Nuestra fe
                 </h2>
-                {/* <img className='md:row-span-2 md:col-span-1'
-                    src='../historia/nuestra-fe/martin-lutero.jpg' alt='lutero' title="Martín Lutero"
-                /> */}
                 <h3 className='text-[20px] md:text-[40px] lg:text-[32px] text-center md:text-start uppercase lg:text-left mt-6'>
                     Las 5 solas de la Reforma Protestante
                 </h3>
