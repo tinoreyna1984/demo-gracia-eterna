@@ -16,9 +16,11 @@ export default function Footer() {
             <div className="flex flex-col gap-4 lg:self-stretch">
                 <h3 className="text-[24px] uppercase">Menú del sitio</h3>
                 <Link href={'/'}>Inicio</Link>
-                <Link href={'#'}>Nuestra iglesia</Link>
-                <Link href={'#'}>Ministerios</Link>
-                <Link href={'#'}>Mensaje del pastor</Link>
+                <Link href={'/historia/nuestra-historia'}>Nuestra historia</Link>
+                <Link href={'/historia/reforma'}>La Reforma Protestante</Link>
+                <Link href={'/historia/iglesia'}>Iglesia Presbiteriana</Link>
+                <Link href={'/historia/nuestra-fe'}>Nuestra fe</Link>
+                <Link href={'/servicios'}>Servicios y Ministerios</Link>
                 <Link href={'#'}>Contacto</Link>
             </div>
             <div className="flex flex-col gap-4">
