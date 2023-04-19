@@ -34,7 +34,8 @@ export default function Footer() {
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>
                 </div>
-
+                <p>Iglesia Reformada Presbiteriana Gracia Eterna, Guayaquil, Ecuador</p>
+                <p>&copy; {new Date().getFullYear()} - Creado por <a className="font-bold" href="https://tinexlab.vercel.app/" target="_blank">TinexLab</a></p>
             </div>
         </footer>
     );
