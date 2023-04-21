@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-4">
                 <h3 className="text-[24px] uppercase">Contacto</h3>
-                <p>Fono: +593 98 194 6246</p>
+                <p>Fono: +593 98 359 2958</p>
                 <p>Correo: iglesiareformadage@gmail.com</p>
                 <h3 className="text-[24px] uppercase mt-6">Redes</h3>
                 <div className="flex flex-row gap-6 items-center">
