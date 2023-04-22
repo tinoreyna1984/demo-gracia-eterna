@@ -48,7 +48,7 @@ export default function Header() {
                         </ul>
                     </li>
                     <li><Link onClick={hideSidebar} href="/servicios">Servicios y Ministerios</Link></li>
-                    <li><Link onClick={hideSidebar} href="#">Contacto</Link></li>
+                    <li><Link onClick={hideSidebar} href="/contacto">Contacto</Link></li>
                 </ul>
             </nav>
         </header>

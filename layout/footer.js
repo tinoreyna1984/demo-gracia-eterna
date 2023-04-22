@@ -21,12 +21,12 @@ export default function Footer() {
                 <Link href={'/historia/iglesia'}>Iglesia Presbiteriana</Link>
                 <Link href={'/historia/nuestra-fe'}>Nuestra fe</Link>
                 <Link href={'/servicios'}>Servicios y Ministerios</Link>
-                <Link href={'#'}>Contacto</Link>
+                <Link href={'/contacto'}>Contacto</Link>
             </div>
             <div className="flex flex-col gap-4">
                 <h3 className="text-[24px] uppercase">Contacto</h3>
                 <p>Fono: +593 98 359 2958</p>
-                <p>Correo: iglesiareformadage@gmail.com</p>
+                <p>Correo: iglesiareformadagraciaeterna@gmail.com</p>
                 <h3 className="text-[24px] uppercase mt-6">Redes</h3>
                 <div className="flex flex-row gap-6 items-center">
                     <a href="https://www.facebook.com/profile.php?id=100066908379755" target={'_blank'}>
