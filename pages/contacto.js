@@ -128,13 +128,13 @@ export default function Contacto() {
                             <input
                                 type="radio"
                                 name="selectedOption"
-                                id="opt03"
+                                id="opt04"
                                 value="Deseo contactarme con ustedes por otros motivos"
                                 checked={option === "Deseo contactarme con ustedes por otros motivos"}
                                 onChange={handleRadio}
                                 disabled={deshabilitar}
                             />
-                            <label className="form-check-label" htmlFor="opt03">
+                            <label className="form-check-label" htmlFor="opt04">
                                 Deseo contactarme con ustedes por otros motivos
                             </label>
                         </div>
