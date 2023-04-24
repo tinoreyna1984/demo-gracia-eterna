@@ -2,7 +2,7 @@ import Card from "@/components/card";
 
 export default function EnGraciaEterna() {
     return (
-        <section className='flex flex-col gap-2 mt-4 px-8 py-8 lg:px-12 lg:py-12 lg:mt-24
+        <section className='flex flex-col gap-2 mt-4 px-8 py-8 md:mt-6 lg:px-12 lg:py-12
             bg-[#F5F2F0]'
             id="resume"
         >
