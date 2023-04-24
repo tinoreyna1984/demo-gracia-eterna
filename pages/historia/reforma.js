@@ -39,8 +39,8 @@ export default function Reforma() {
                     En resumen, fue en aquel periodo en el que los llamados reformadores fueron llamados por Dios para buscar el reencuentro con Dios a través de la Biblia, que trajo consigo nuevas perspectivas de vida cristiana, misión, teología, etcétera, para la gloria de Dios.
                 </p>
                 <h3
-                    className='text-[20px] md:text-[40px] lg:text-[32px] text-center md:text-start uppercase lg:text-left
-                    md:col-span-2 md:mt-6'
+                    className='text-[20px] md:text-[40px] lg:text-[32px] text-center mt-8 md:text-start uppercase lg:text-left
+                    md:col-span-2 md:mt-10'
                 >
                     La Reforma hoy
                 </h3>
