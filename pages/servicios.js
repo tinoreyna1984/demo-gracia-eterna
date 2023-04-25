@@ -54,7 +54,7 @@ export default function Servicios() {
                     </div>
                     <div className="rounded bg-[#FFF5EB] px-4 py-2 flex flex-col gap-4 justify-around items-center min-h-[390px] max-w-[264px]
                     lg:transition-all lg:duration-500 lg:delay-150 lg:ease-in-out lg:hover:scale-110">
-                        <img className="rounded object-cover min-w-[232px] min-h-[186px] max-h-[186px]" src="/servicios/s-00.jpg" alt="Servicio" />
+                        <img className="rounded object-cover min-w-[232px] min-h-[186px] max-h-[186px]" src="/servicios/s-05.jpg" alt="Servicio" />
                         <h4 className="text-center text-[20px]">Tiempo deportivo mujeres</h4>
                         <p>Lunes a viernes 7-8h, Parque Samanes</p>
                         <a className="text-white bg-[#25D366] px-4 py-2 rounded flex items-center"
@@ -109,7 +109,7 @@ export default function Servicios() {
                     </div>
                     <div className="rounded bg-[#FFF5EB] px-2 py-3 flex flex-col gap-4 justify-around items-center min-h-[390px] max-w-[264px]
                     lg:transition-all lg:duration-500 lg:delay-150 lg:ease-in-out lg:hover:scale-110">
-                        <img className="rounded object-cover min-w-[232px] min-h-[186px] max-h-[186px]" src="/ministerios/m-00.jpg" alt="Servicio" />
+                        <img className="rounded object-cover min-w-[232px] min-h-[186px] max-h-[186px]" src="/ministerios/m-04.jpg" alt="Servicio" />
                         <h4 className="text-center text-[20px]">Varones</h4>
                         <p>Consultar por próximas reuniones</p>
                         <a className="text-white bg-[#25D366] px-4 py-2 rounded flex items-center"
@@ -124,6 +124,16 @@ export default function Servicios() {
                         <p>Consultar por próximas reuniones</p>
                         <a className="text-white bg-[#25D366] px-4 py-2 rounded flex items-center"
                             href="https://wa.me/593983592958?text=Hola!%20Quisiera%20conocer%20más%20sobre%20el%20ministerio%20de%20parejas" target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={faWhatsapp} size="2x" /><p className="ml-2 text-lg">Conoce más</p>
+                        </a>
+                    </div>
+                    <div className="rounded bg-[#FFF5EB] px-2 py-3 flex flex-col gap-4 justify-around items-center min-h-[390px] max-w-[264px]
+                    lg:transition-all lg:duration-500 lg:delay-150 lg:ease-in-out lg:hover:scale-110">
+                        <img className="rounded object-cover min-w-[232px] min-h-[186px] max-h-[186px]" src="/ministerios/m-06.jpg" alt="Servicio" />
+                        <h4 className="text-center text-[20px]">Ministerio de Bolivia y la 18</h4>
+                        <p>Consultar más de este ministerio</p>
+                        <a className="text-white bg-[#25D366] px-4 py-2 rounded flex items-center"
+                            href="https://wa.me/593983592958?text=Hola!%20Quisiera%20conocer%20más%20sobre%20el%20ministerio%20de%20bolivia%20y%20la%20dieciocho" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faWhatsapp} size="2x" /><p className="ml-2 text-lg">Conoce más</p>
                         </a>
                     </div>
