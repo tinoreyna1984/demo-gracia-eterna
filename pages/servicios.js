@@ -119,7 +119,7 @@ export default function Servicios() {
                     </div>
                     <div className="rounded bg-[#FFF5EB] px-2 py-3 flex flex-col gap-4 justify-around items-center min-h-[390px] max-w-[264px]
                     lg:transition-all lg:duration-500 lg:delay-150 lg:ease-in-out lg:hover:scale-110">
-                        <img className="rounded object-cover min-w-[232px] min-h-[186px] max-h-[186px]" src="/ministerios/m-00.jpg" alt="Servicio" />
+                        <img className="rounded object-cover min-w-[232px] min-h-[186px] max-h-[186px]" src="/ministerios/m-05.jpg" alt="Servicio" />
                         <h4 className="text-center text-[20px]">Parejas</h4>
                         <p>Consultar por próximas reuniones</p>
                         <a className="text-white bg-[#25D366] px-4 py-2 rounded flex items-center"
