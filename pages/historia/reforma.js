@@ -15,7 +15,7 @@ export default function Reforma() {
                     className='md:text-[16px] lg:text-[24px]
                     md:col-span-2'
                 >
-                    Es el evento histórico que ha impactado profundamente al mundo, el cual parte de Europa Occidental y ha propiciado la difusión más amplia de la Biblia y ha acelerado el progreso social del viejo continente. Efectos que se mantienen al día de hoy a nivel mundial.
+                    Es el evento histórico que ha impactado profundamente al mundo, el cual parte de Europa Occidental, ha propiciado la difusión más amplia de la Biblia y ha acelerado el progreso social del viejo continente. Efectos que se mantienen al día de hoy a nivel mundial.
                 </p>
                 <p className='md:text-[16px] lg:text-[24px]'>
                     Sucede esto un 31 de octubre de 1517, en Wittenberg, Alemania. Martín Lutero (1483 - 1546), quien era -en ese entonces- un monje agustino, entendió el vacío de su vida que no podía ser cubierto por su vida monástica. Al entrar a la Universidad de Wittenberg para estudiar teología, encontró la clave en el estudio de la Carta a los Romanos, muy particularmente el verso 1:17, el cual dice: "Porque en el evangelio la justicia de Dios se revela por fe y para fe, como está escrito: Mas el justo por la fe vivirá." Esto insertó un consuelo en el alma de este religioso y genera una nueva perspectiva que le llevaría al redescubrimiento de la Palabra de Dios en una Europa humanista temprana.
